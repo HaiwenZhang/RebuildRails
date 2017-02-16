@@ -1,0 +1,22 @@
+PATH
+  remote: ../rulers
+  specs:
+    rulers (0.1.0)
+      rack (~> 2.0)
+
+GEM
+  remote: https://gems.ruby-china.org/
+  specs:
+    rack (2.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rulers (~> 0.1.0)!
+
+RUBY VERSION
+   ruby 2.3.3p222
+
+BUNDLED WITH
+   1.14.4
