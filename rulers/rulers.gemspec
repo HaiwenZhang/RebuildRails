@@ -36,4 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.7"
   spec.add_development_dependency "rack-test", '~> 0.8.3'
   spec.add_runtime_dependency "rack", '~> 2.0', '>= 2.0.4'
+  spec.add_runtime_dependency "erubis"
+  spec.add_runtime_dependency "multi_json"
+  spec.add_runtime_dependency "sqlite3"
 end
