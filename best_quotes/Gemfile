@@ -1,5 +1,5 @@
 source "https://gems.ruby-china.org"
 
-ruby '2.3.3'
+ruby '2.4.1'
 
-gem 'rulers', '~> 0.1.0', :path => "../rulers"
+gem 'rulers', '~> 0.1.0' #, :path => "../rulers"

@@ -1,23 +1,23 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rulers/version'
+require "rulers/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "rulers"
   spec.version       = Rulers::VERSION
-  spec.authors       = ["Haiwen"]
+  spec.authors       = ["HaiwenZhang"]
   spec.email         = ["haiwensummer@gmail.com"]
 
-  spec.summary       = %q{Haiwen Rebuild Rails gem}
-  spec.description   = %q{Haiwen Rebuild Rails gem}
-  spec.homepage      = "http://haiwenzhang.github.io"
+  spec.summary       = %q{A rack based web framework}
+  spec.description   = %q{A Rack-besed Web Framework}
+  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -30,9 +30,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.14"
+  spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
 
-  spec.add_runtime_dependency "rack", '~> 2.0'
+  spec.add_development_dependency "rspec", "~> 3.7"
+  spec.add_development_dependency "rack-test", '~> 0.8.3'
+  spec.add_runtime_dependency "rack", '~> 2.0', '>= 2.0.4'
 end
